@@ -22,11 +22,11 @@ class Notifier
         ], $config);
 
         if (!$config['app_id']) {
-            throw new NotifierSDKException('Config value for "app_id" not provided and could not be found in environment under ' . static::APP_ID_ENV_NAME);
+            throw new NotifierSDKException('Config value for "app_id" not provided and could not be found in environment under "' . static::APP_ID_ENV_NAME . '"');
         }
 
         if (!$config['app_secret']) {
-            throw new NotifierSDKException('Config value for "app_secret" not provided and could not be found in environment under ' . static::APP_SECRET_ENV_NAME);
+            throw new NotifierSDKException('Config value for "app_secret" not provided and could not be found in environment under "' . static::APP_SECRET_ENV_NAME . '"');
         }
 
         $this->app = new NotifierApp();
