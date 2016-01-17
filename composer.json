@@ -1,0 +1,21 @@
+{
+    "name": "notifier/php-sdk",
+    "description": "The PHP SDK for the Notifier API.",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=5.5.9",
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "raveren/kint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Notifier\\SDK\\": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}
